@@ -2,20 +2,49 @@
 
 @section('content')
     <!-- Hero Start -->
-    <div class="container-fluid bg-light py-6 my-6 mt-0">
-        <div class="container">
-            <div class="row g-5 align-items-center">
-                <div class="col-lg-7 col-md-12">
-                    <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-4 animated bounceInDown">Welcome to Althia Event Services</small>
-                    <h1 class="display-1 mb-4 animated bounceInDown">Book <span class="text-primary">Althia</span>Serv For Your Dream Event</h1>
-                    <a href="{{url('/add-booking')}}" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 me-4 animated bounceInLeft">Book Now</a>
-                    <a href="{{url('/about')}}" class="btn btn-primary border-0 rounded-pill py-3 px-4 px-md-5 animated bounceInLeft">Know More</a>
-                </div>
-                <div class="col-lg-5 col-md-12">
-                    <img src="{{asset('assets/img/hero.png')}}" class="img-fluid rounded animated zoomIn" alt="">
-                </div>
-            </div>
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
         </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="{{asset('assets/img/ev6.jpg')}}" class="d-block w-100" alt="event-img">
+            <div class="carousel-caption d-none d-md-block">
+              <h1>Althia's Event Services</h1>
+              {{-- <p>Some representative placeholder content for the first slide.</p> --}}
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="{{asset('assets/img/ev9.jpg')}}" class="d-block w-100" alt="event-img">
+            <div class="carousel-caption d-none d-md-block">
+                <h1>Althia's Event Services</h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="{{asset('assets/img/ev7.jpg')}}" class="d-block w-100" alt="event-img">
+            <div class="carousel-caption d-none d-md-block">
+                <h1>Althia's Event Services</h1>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="{{asset('assets/img/ev8.jpg')}}" class="d-block w-100" alt="event-img">
+            <div class="carousel-caption d-none d-md-block">
+                <h1>Althia's Event Services</h1>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
     </div>
     <!-- Hero End -->
 
@@ -26,14 +55,14 @@
             <div class="row g-5 align-items-center">
 
                 <div class="col-lg-7 wow bounceInUp" data-wow-delay="0.3s">
-                    <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">About Us</small>
-                    <h1 class="display-5 mb-4">Althia’s Event Services</h1>
+
+                    <h1 class="display-5 mb-4 pink">Althia’s Event Services</h1>
                     <p class="mb-4">Althia Event Services specializes in providing a comprehensive range of event solutions, with a particular focus on catering and a multitude of other services. Our catering division is renowned for crafting exquisite culinary experiences that leave a lasting impression on guests. From mouthwatering appetizers to delectable main courses and indulgent desserts, our expert chefs curate menus that cater to diverse tastes and dietary preferences. Moreover, Althia's commitment to excellence extends beyond catering, as we offer an array of event services, including event planning, decor, entertainment, and audiovisual support. With our meticulous attention to detail and a passion for exceeding expectations, we transform every event into a memorable and seamless affair.</p>
 
-                    <a href="{{ url('/about')}}" class="btn btn-primary py-3 px-5 rounded-pill">About Us<i class="fas fa-arrow-right ps-2"></i></a>
+                    <a href="{{ url('/about')}}" class="btn bg-pink py-3 px-5 rounded-pill">About Us<i class="fas fa-arrow-right ps-2"></i></a>
                 </div>
                 <div class="col-lg-5 wow bounceInUp" data-wow-delay="0.1s">
-                    <img src="{{asset('assets/img/event-4.jpg')}}" class="img-fluid rounded" alt="">
+                    <img src="{{asset('assets/img/atlhia1.jpg')}}" class="img-fluid rounded" alt="">
                 </div>
             </div>
         </div>
@@ -42,40 +71,69 @@
 
      <!-- Fact Start-->
      <div class="container-fluid faqt py-6">
+
         <div class="container">
             <div class="row g-4 align-items-center">
                 <div class="col-lg-7">
                    <div class="row g-4">
                         <div class="col-sm-4 wow bounceInUp" data-wow-delay="0.3s">
-                            <div class="faqt-item bg-primary rounded p-4 text-center">
-                                <i class="fas fa-users fa-4x mb-4 text-white"></i>
-                                <h1 class="display-4 fw-bold text-white" data-toggle="counter-up">689</h1>
-                                <p class="text-white text-uppercase fw-bold mb-0">Happy Customers</p>
+                            <div class="faqt-item bg-pink rounded p-4 text-center">
+                                <i class="fas fa-users fa-4x mb-4 "></i>
+                                <h1 class="display-4 fw-bold " data-toggle="counter-up">689</h1>
+                                <p class=" text-uppercase fw-bold mb-0">Happy Customers</p>
                             </div>
                         </div>
                         <div class="col-sm-4 wow bounceInUp" data-wow-delay="0.5s">
-                            <div class="faqt-item bg-primary rounded p-4 text-center">
-                                <i class="fas fa-users-cog fa-4x mb-4 text-white"></i>
-                                <h1 class="display-4 fw-bold text-white" data-toggle="counter-up">107</h1>
-                                <p class="text-white text-uppercase fw-bold mb-0">Expert Chefs</p>
+                            <div class="faqt-item bg-pink rounded p-4 text-center">
+                                <i class="fas fa-users-cog fa-4x mb-4 "></i>
+                                <h1 class="display-4 fw-bold " data-toggle="counter-up">107</h1>
+                                <p class=" text-uppercase fw-bold mb-0">Expert Chefs</p>
                             </div>
                         </div>
                         <div class="col-sm-4 wow bounceInUp" data-wow-delay="0.7s">
-                            <div class="faqt-item bg-primary rounded p-4 text-center">
-                                <i class="fas fa-check fa-4x mb-4 text-white"></i>
-                                <h1 class="display-4 fw-bold text-white" data-toggle="counter-up">253</h1>
-                                <p class="text-white text-uppercase fw-bold mb-0">Events Complete</p>
+                            <div class="faqt-item bg-pink rounded p-4 text-center">
+                                <i class="fas fa-check fa-4x mb-4 "></i>
+                                <h1 class="display-4 fw-bold " data-toggle="counter-up">253</h1>
+                                <p class=" text-uppercase fw-bold mb-0">Events Complete</p>
                             </div>
                         </div>
                     </div>
                 </div>
+                {{-- <div class="col-lg-5 wow bounceInUp" data-wow-delay="0.1s">
+                    <div class="video">
+                        <button type="button" class="btn btn-play" data-bs-toggle="modal" data-src="{{ asset('assets/video/althia-vid.mp4')}}" data-bs-target="#videoModal">
+                            <span></span>
+                        </button>
+                    </div>
+                </div> --}}
                 <div class="col-lg-5 wow bounceInUp" data-wow-delay="0.1s">
                     <div class="video">
-                        <button type="button" class="btn btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-bs-target="#videoModal">
+                        <button type="button" class="btn btn-play" data-bs-toggle="modal" data-src="" data-bs-target="#videoModal">
                             <span></span>
                         </button>
                     </div>
                 </div>
+                <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <video controls width="100%" height="auto">
+                                    <source id="videoSource" src="{{ asset('assets/video/althia-vid.mp4')}}" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                {{-- <div class="col-lg-5 wow bounceInUp" data-wow-delay="0.1s">
+                    <div class="video">
+                        <video controls width="560" height="500">
+                            <source src="{{ asset('assets/video/althia-vid.mp4')}}" type="video/mp4">
+                        </video>
+                    </div>
+                </div> --}}
+
             </div>
         </div>
     </div>
@@ -103,8 +161,8 @@
     <div class="container-fluid service py-6">
         <div class="container">
             <div class="text-center wow bounceInUp" data-wow-delay="0.1s">
-                <small class="d-inline-block fw-bold text-dark text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Our Services</small>
-                <h1 class="display-5 mb-5">What We Offer</h1>
+                <small class="d-inline-block fw-bold pink text-uppercase bg-light border border-primary rounded-pill px-4 py-1 mb-3">Our Services</small>
+                <h1 class="display-5 mb-5 pink">What We Offer</h1>
             </div>
             <div class="row gx-4 justify-content-center">
                 @foreach ($all_events as $eventitem)
@@ -116,13 +174,13 @@
                                     <img src="{{asset('uploads/event/'.$eventitem->image)}}" class="img-fluid w-100" style="height: 450px; object-fit: cover;" alt="">
                                 </div>
                                 <div class="blog-content mx-4 d-flex rounded bg-light">
-                                    <div class="text-white bg-primary rounded-start">
+                                    <div class=" bg-pink rounded-start">
                                         <div class="h-100 p-3 d-flex flex-column justify-content-center text-center">
                                             <p class="fw-bold mb-0">Book</p>
                                             <p class="fw-bold mbs-0">Now</p>
                                         </div>
                                     </div>
-                                    <a href="#!" class="h5 lh-base my-auto h-100 p-3">{{ $eventitem->name}}</a>
+                                    <a href="{{'/add-booking'}}" class="h5 lh-base pink my-auto h-100 p-3">{{ $eventitem->name}}</a>
                                 </div>
                             </div>
                         </div>
