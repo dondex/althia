@@ -1,20 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-<!-- Hero Start -->
-<div class="container-fluid bg-light py-6 my-6 mt-0">
-    <div class="container text-center animated bounceInDown">
-        <h1 class="display-1 mb-4 pink">Contact</h1>
-        <ol class="breadcrumb justify-content-center mb-0 animated bounceInDown">
-            <li class="breadcrumb-item"><a href="{{url('/')}}">Home</a></li>
-            <li class="breadcrumb-item text-dark" aria-current="page">Contact</li>
-        </ol>
-    </div>
-</div>
-<!-- Hero End -->
+
 
  <!-- Contact Start -->
- <div class="container-fluid contact py-6 wow bounceInUp" data-wow-delay="0.1s">
+ <div class="container-fluid contact py-2 wow bounceInUp" data-wow-delay="0.1s">
     <div class="container">
         <div class="p-5 bg-light rounded contact-form">
             <div class="row g-4">
@@ -23,7 +13,7 @@
                     <h1 class="display-5 mb-0 pink">Contact Us For Any Queries!</h1>
                 </div>
                 <div class="col-md-6 col-lg-7">
-                    <p class="mb-4">The contact form is currently inactive. Get a functional and working contact form with Ajax & PHP in a few minutes. Just copy and paste the files, add a little code and you're done. <a href="">Download Now</a>.</p>
+
                     @if (session('message'))
                         <div class="alert alert-success">{{session('message')}}</div>
                     @endif
@@ -51,23 +41,23 @@
                             <i class="fas fa-map-marker-alt fa-2x pink me-4"></i>
                             <div class="">
                                 <h4>Address</h4>
-                                <p>123 Street, New York, USA</p>
+                                <p>Poblacion, Zone 2, San Quintin, Pangasinan</p>
                             </div>
                         </div>
                         <div class="d-inline-flex w-100 border p-4 rounded mb-4">
                             <i class="fas fa-envelope fa-2x pink me-4"></i>
                             <div class="">
                                 <h4>Mail Us</h4>
-                                <p class="mb-2">info@example.com</p>
-                                <p class="mb-0">support@example.com</p>
+                                <p class="mb-2">AlthiasEvent@gmail.com</p>
+
                             </div>
                         </div>
                         <div class="d-inline-flex w-100 border p-4 rounded">
                             <i class="fa fa-phone-alt fa-2x pink me-4"></i>
                             <div class="">
                                 <h4>Telephone</h4>
-                                <p class="mb-2">(+012) 3456 7890 123</p>
-                                <p class="mb-0">(+704) 5555 0127 296</p>
+                                <p class="mb-2">0985 185 3226</p>
+
                             </div>
                         </div>
                     </div>

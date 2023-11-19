@@ -1,20 +1,10 @@
 @extends('layouts.app')
 
 @section('content')
-<!-- Hero Start -->
-<div class="container-fluid bg-light py-6 mt-0">
-    <div class="container text-center animated bounceInDown">
-        <h1 class="display-1 mb-4 pink">Book Now</h1>
-        <ol class="breadcrumb justify-content-center mb-0 animated bounceInDown">
-            <li class="breadcrumb-item"><a href="{{url('/')}}">Home</a></li>
-            <li class="breadcrumb-item text-dark" aria-current="page">Book</li>
-        </ol>
-    </div>
-</div>
-<!-- Hero End -->
+
 
 <!-- Book Us Start -->
-<div id="book" class="container-fluid contact py-6 wow bounceInUp" data-wow-delay="0.1s">
+<div id="book" class="container-fluid contact py-2 wow bounceInUp" data-wow-delay="0.1s">
     <div class="container">
         @if ($errors->any())
                 <div class="alert alert-danger">
@@ -30,7 +20,7 @@
 
         <div class="row g-0">
             <div class="col-1">
-                <img src="{{asset('assets/img/background-site.jpg')}}" class="img-fluid h-100 w-100 rounded-start" style="object-fit: cover; opacity: 0.7;" alt="">
+                <img src="{{asset('assets/img/footer-bg.jpg')}}" class="img-fluid h-100 w-100 rounded-start" style="object-fit: cover; opacity: 0.7;" alt="">
             </div>
             <div class="col-10">
                 <div class="border-bottom border-top border-primary bg-light py-5 px-4">
@@ -98,7 +88,7 @@
                 </div>
             </div>
             <div class="col-1">
-                <img src="{{asset('assets/img/background-site.jpg')}}" class="img-fluid h-100 w-100 rounded-end" style="object-fit: cover; opacity: 0.7;" alt="">
+                <img src="{{asset('assets/img/footer-bg.jpg')}}" class="img-fluid h-100 w-100 rounded-end" style="object-fit: cover; opacity: 0.7;" alt="">
             </div>
         </div>
     </div>

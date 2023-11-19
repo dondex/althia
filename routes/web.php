@@ -49,10 +49,11 @@ Route::prefix('admin')->middleware(['auth', 'isAdmin'])->group(function () {
     Route::put('update-user/{user_id}', [UserController::class, 'update']);
 });
 
-//bookings not auth
 
-Route::get('add-booking', [BookingController::class, 'create']);
-Route::post('add-booking', [BookingController::class, 'store']);
+Route::middleware(['auth'])->group(function () {
+    Route::get('add-booking', [BookingController::class, 'create']);
+    Route::post('add-booking', [BookingController::class, 'store']);
+});
 
 
 Route::get('add-inquiry', [InquiryController::class, 'create']);

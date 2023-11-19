@@ -2,50 +2,56 @@
 
 @section('content')
     <!-- Hero Start -->
-    <div id="carouselExampleCaptions" class="carousel slide">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+    <div class="hero-bg" style="background-color: #BE1A3F; padding: 50px 0;">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="{{asset('assets/img/ev6.jpg')}}" class="d-block w-100" alt="event-img">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>Althia's Event Services</h1>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="{{asset('assets/img/ev9.jpg')}}" class="d-block w-100" alt="event-img">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>Althia's Event Services</h1>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="{{asset('assets/img/ev7.jpg')}}" class="d-block w-100" alt="event-img">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>Althia's Event Services</h1>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="{{asset('assets/img/ev8.jpg')}}" class="d-block w-100" alt="event-img">
+                <div class="carousel-caption d-none d-md-block">
+                  <h1>Althia's Event Services</h1>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="{{asset('assets/img/ev6.jpg')}}" class="d-block w-100" alt="event-img">
-            <div class="carousel-caption d-none d-md-block">
-              <h1>Althia's Event Services</h1>
-              {{-- <p>Some representative placeholder content for the first slide.</p> --}}
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="{{asset('assets/img/ev9.jpg')}}" class="d-block w-100" alt="event-img">
-            <div class="carousel-caption d-none d-md-block">
-                <h1>Althia's Event Services</h1>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="{{asset('assets/img/ev7.jpg')}}" class="d-block w-100" alt="event-img">
-            <div class="carousel-caption d-none d-md-block">
-                <h1>Althia's Event Services</h1>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="{{asset('assets/img/ev8.jpg')}}" class="d-block w-100" alt="event-img">
-            <div class="carousel-caption d-none d-md-block">
-                <h1>Althia's Event Services</h1>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
     </div>
+
+
+
+
     <!-- Hero End -->
 
 
@@ -79,21 +85,21 @@
                         <div class="col-sm-4 wow bounceInUp" data-wow-delay="0.3s">
                             <div class="faqt-item bg-pink rounded p-4 text-center">
                                 <i class="fas fa-users fa-4x mb-4 "></i>
-                                <h1 class="display-4 fw-bold " data-toggle="counter-up">689</h1>
+                                <h1 class="display-4 fw-bold " data-toggle="counter-up">120</h1>
                                 <p class=" text-uppercase fw-bold mb-0">Happy Customers</p>
                             </div>
                         </div>
                         <div class="col-sm-4 wow bounceInUp" data-wow-delay="0.5s">
                             <div class="faqt-item bg-pink rounded p-4 text-center">
                                 <i class="fas fa-users-cog fa-4x mb-4 "></i>
-                                <h1 class="display-4 fw-bold " data-toggle="counter-up">107</h1>
-                                <p class=" text-uppercase fw-bold mb-0">Expert Chefs</p>
+                                <h1 class="display-4 fw-bold " data-toggle="counter-up">5</h1>
+                                <p class=" text-uppercase fw-bold mb-0">Photo-Videographer</p>
                             </div>
                         </div>
                         <div class="col-sm-4 wow bounceInUp" data-wow-delay="0.7s">
                             <div class="faqt-item bg-pink rounded p-4 text-center">
                                 <i class="fas fa-check fa-4x mb-4 "></i>
-                                <h1 class="display-4 fw-bold " data-toggle="counter-up">253</h1>
+                                <h1 class="display-4 fw-bold " data-toggle="counter-up">150</h1>
                                 <p class=" text-uppercase fw-bold mb-0">Events Complete</p>
                             </div>
                         </div>
