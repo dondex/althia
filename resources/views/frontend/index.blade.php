@@ -81,29 +81,34 @@
         <div class="container">
             <div class="row g-4 align-items-center">
                 <div class="col-lg-7">
-                   <div class="row g-4">
-                        <div class="col-sm-4 wow bounceInUp" data-wow-delay="0.3s">
-                            <div class="faqt-item bg-pink rounded p-4 text-center">
-                                <i class="fas fa-users fa-4x mb-4 "></i>
-                                <h1 class="display-4 fw-bold " data-toggle="counter-up">120</h1>
-                                <p class=" text-uppercase fw-bold mb-0">Happy Customers</p>
+
+                    @foreach ($all_counts as $countitem)
+
+                        <div class="row g-4">
+                            <div class="col-sm-4 wow bounceInUp" data-wow-delay="0.3s">
+                                <div class="faqt-item bg-pink rounded p-4 text-center">
+                                    <i class="fas fa-users fa-4x mb-4 "></i>
+                                    <h1 class="display-4 fw-bold " data-toggle="counter-up">{{$countitem->happy_customer}}</h1>
+                                    <p class=" text-uppercase fw-bold mb-0">Happy Customers</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 wow bounceInUp" data-wow-delay="0.5s">
+                                <div class="faqt-item bg-pink rounded p-4 text-center">
+                                    <i class="fas fa-users-cog fa-4x mb-4 "></i>
+                                    <h1 class="display-4 fw-bold " data-toggle="counter-up">{{$countitem->videographer}}</h1>
+                                    <p class=" text-uppercase fw-bold mb-0">Photo-Videographer</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-4 wow bounceInUp" data-wow-delay="0.7s">
+                                <div class="faqt-item bg-pink rounded p-4 text-center">
+                                    <i class="fas fa-check fa-4x mb-4 "></i>
+                                    <h1 class="display-4 fw-bold " data-toggle="counter-up">{{$countitem->events_complete}}</h1>
+                                    <p class=" text-uppercase fw-bold mb-0">Events Complete</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-sm-4 wow bounceInUp" data-wow-delay="0.5s">
-                            <div class="faqt-item bg-pink rounded p-4 text-center">
-                                <i class="fas fa-users-cog fa-4x mb-4 "></i>
-                                <h1 class="display-4 fw-bold " data-toggle="counter-up">5</h1>
-                                <p class=" text-uppercase fw-bold mb-0">Photo-Videographer</p>
-                            </div>
-                        </div>
-                        <div class="col-sm-4 wow bounceInUp" data-wow-delay="0.7s">
-                            <div class="faqt-item bg-pink rounded p-4 text-center">
-                                <i class="fas fa-check fa-4x mb-4 "></i>
-                                <h1 class="display-4 fw-bold " data-toggle="counter-up">150</h1>
-                                <p class=" text-uppercase fw-bold mb-0">Events Complete</p>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
+
                 </div>
                 {{-- <div class="col-lg-5 wow bounceInUp" data-wow-delay="0.1s">
                     <div class="video">

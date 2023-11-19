@@ -21,12 +21,17 @@
                 </div>
 
                 <a class="nav-link {{ Request::is('admin/bookings') ? 'active' : '' }}" href="{{ url('admin/bookings')}}">
-                    <div class="sb-nav-link-icon"><i class="fas fa-users"></i></div>
+                    <div class="sb-nav-link-icon"><i class="fa fa-book"></i></div>
                     Bookings
                 </a>
                 <a class="nav-link {{ Request::is('admin/inquiry') ? 'active' : '' }}" href="{{ url('admin/inquiry')}}">
-                    <div class="sb-nav-link-icon"><i class="fas fa-users"></i></div>
+                    <div class="sb-nav-link-icon"><i class="fa fa-pencil"></i></div>
                     Inquiries
+                </a>
+
+                <a class="nav-link {{ Request::is('admin/count') ? 'active' : '' }}" href="{{ url('admin/count')}}">
+                    <div class="sb-nav-link-icon"><i class="fa fa-sort-numeric-asc"></i></div>
+                    Event Counts
                 </a>
 
                 <a class="nav-link {{ Request::is('admin/users') ? 'active' : '' }}" href="{{ url('admin/users')}}">

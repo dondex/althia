@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AboutController;
 use App\Http\Controllers\Admin\BookingController;
+use App\Http\Controllers\Admin\CountController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\EventController;
 use App\Http\Controllers\Admin\InquiryController;
@@ -47,6 +48,12 @@ Route::prefix('admin')->middleware(['auth', 'isAdmin'])->group(function () {
     Route::get('users', [UserController::class, 'index']);
     Route::get('user/{user_id}', [UserController::class, 'edit']);
     Route::put('update-user/{user_id}', [UserController::class, 'update']);
+
+    Route::get('count', [CountController::class, 'index']);
+    Route::get('add-count-secret', [CountController::class, 'create']);
+    Route::post('add-count-secret', [CountController::class, 'store']);
+    Route::get('edit-count/{count_id}', [CountController::class, 'edit']);
+    Route::put('update-count/{count_id}', [CountController::class, 'update']);
 });
 
 
