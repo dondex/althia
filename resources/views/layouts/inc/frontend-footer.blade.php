@@ -6,10 +6,12 @@
                 <div class="footer-item">
                     <h1 class="pink">Althia's<span class="text-dark">Services</span></h1>
 
-                    <div class="footer-icon d-flex">
-                        <a target="_blank" class="btn bg-pink btn-sm-square me-2 rounded-circle" href="https://www.facebook.com/althias.bridal"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" class="btn bg-pink btn-sm-square me-2 rounded-circle"><i class="fab fa-instagram"></i></a>
+                    <div class="d-flex flex-column align-items-start">
+                        <p><i class="fab fa-facebook-f pink me-2"></i> <a class="text-dark" href="https://www.facebook.com/althias.bridal">Facebook</a></p>
+                        <p><i class="fab fa-instagram pink me-2"></i> <a class="text-dark" href="#!">Instagram</a></p>
                     </div>
+
+
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
